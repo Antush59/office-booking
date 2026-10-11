@@ -100,18 +100,22 @@ mvn test
 ## Структура проекта
 
 ```
-src/main/java/com/example/officebooking/
-├── config/        # сидер начальных данных
-├── controller/    # REST-контроллеры + обработчик ошибок
-├── dto/           # DTO (records)
-├── entity/        # JPA-сущности
-├── exception/     # доменные исключения
-├── repository/    # Spring Data-репозитории
-└── service/       # бизнес-логика
-
-src/main/resources/
-├── application.yml
-└── db/changelog/db.changelog-master.sql   # Liquibase-миграции
-
-src/test/java/...  # тесты (TestNG + Testcontainers)
+.
+├── pom.xml                          # Maven-конфигурация
+├── docker-compose.yml               # PostgreSQL для локального запуска
+├── openspec/                        # спецификации и изменения (OpenSpec)
+├── docs/                            # исходные требования
+└── src/
+    ├── main/java/com/example/officebooking/
+    │   ├── config/        # сидер начальных данных
+    │   ├── controller/    # REST-контроллеры + обработчик ошибок
+    │   ├── dto/           # DTO (records)
+    │   ├── entity/        # JPA-сущности
+    │   ├── exception/     # доменные исключения
+    │   ├── repository/    # Spring Data-репозитории
+    │   └── service/       # бизнес-логика
+    ├── main/resources/
+    │   ├── application.yml
+    │   └── db/changelog/db.changelog-master.sql   # Liquibase-миграции
+    └── test/java/...      # тесты (TestNG + Testcontainers)
 ```
