@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/office_booking
+    username: office
+    password: office
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.sql
+
+server:
+  port: 8081

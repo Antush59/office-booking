@@ -1,0 +1,22 @@
+# Build output
+target/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+bin/
+
+# Logs
+*.log
+
+# OpenCode (локальные данные агента)
+.opencode/
+
+# OS
+.DS_Store
+Thumbs.db
